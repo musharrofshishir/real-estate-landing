@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Splide Css -->
+    <link rel="stylesheet" href="assets/css/splide.min.css">
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Alpine Js -->
+    <script defer src="https://unpkg.com/alpinejs@3.10.2/dist/cdn.min.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="_real_header_wrapper">
+        <div class="_real_header_shape">
+            <img src="assets/images/header-shape2.svg" alt="shape ">
+        </div>
+        <div class="_real_header_nav_wrap">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light _real_header_nav">
+                <div class="container">
+                    <div class="_real_header_nav_inner">
+                        <div class="_nav_logo_wrap">
+                            <a class="_nav_logo_link navbar-brand" href="#">
+                                <img src="assets/images/logo.svg" alt="Logo">
+                            </a>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 _real_header_nav_ul">
+                                <li class="nav-item _real_header_nav_li">
+                                    <a class="nav-link active _real_header_nav_a" aria-current="page"
+                                        href="#">Services</a>
+                                </li>
+                                <li class="nav-item _real_header_nav_li">
+                                    <a class="nav-link _real_header_nav_a" href="#">How it works</a>
+                                </li>
+                                <li class="nav-item _real_header_nav_li">
+                                    <a class="nav-link _real_header_nav_a" href="#">About us</a>
+                                </li>
+                                <li class="nav-item _real_header_nav_li">
+                                    <a class="nav-link _real_header_nav_a" href="#">Sell</a>
+                                </li>
+                                <li class="nav-item _real_header_nav_li">
+                                    <a class="nav-link _real_header_nav_a" href="#">Agents</a>
+                                </li>
+                            </ul>
+                            <div class="d-flex">
+                                <button class="_nav_btn btn" type="submit">
+                                    <span class="_nav_btn_txt">Sign up</span>
+                                    <span class="_nav_btn_ic">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                            viewBox="0 0 24 24">
+                                            <path stroke="#FF5E3A" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2.7"
+                                                d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2m8-10a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z" />
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="_real_header_wrap">
+            <div class="container">
+                <div class="_real_header_content_wrap">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                            <div class="_real_header_content">
+                                <div class="_real_header_content_shape1"></div>
+                                <div class="_real_header_content_shape2"></div>
+                                <div class="_real_header_content_txt">
+                                    <h1 class="_real_header_content_title">
+                                        Find your <span>⚡️</span>
+                                        place of dream
+                                    </h1>
+                                    <p class="_real_header_content_p">
+                                        Hoomie is a real estate solution that gives you the local scoop about homes.
+                                    </p>
+                                </div>
+                                <div class="_real_header_content_btn_wrap">
+                                    <button
+                                        class="_real_footer_top_cta_btn _real_explore_content_btn _real_header_content_btn">
+                                        <span class="_real_footer_top_cta_btn_txt _real_explore_content_btn_txt">
+                                            Find My Home
+                                        </span>
+                                        <span class="_real_footer_top_cta_btn_ic _real_explore_content_btn_ic">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="16" fill="none"
+                                                view-box="0 0 11 16">
+                                                <path fill="#000" stroke="#000" stroke-width=".5"
+                                                    d="m3.058 15.019.177.177.177-.177 7.034-7.034.177-.177-.177-.177L3.412.597 3.235.42l-.177.177L1.315 2.34l-.176.176.176.177L6.43 7.808l-5.115 5.114-.176.177.176.177 1.743 1.743Z" />
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </div>
+                                <div class="_real_header_content_support_wrap">
+                                    <div class="_real_header_content_support_inner">
+                                        <div class="_real_header_content_support_arrow">
+                                            <img src="assets/images/org-arw.svg" alt="arrow">
+                                        </div>
+                                        <span class="_real_header_content_support_ic">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="31" fill="none"
+                                                viewBox="0 0 36 31">
+                                                <path fill="#fff"
+                                                    d="M30 0H5.385A5.39 5.39 0 0 0 0 5.385v15.384a5.39 5.39 0 0 0 5.385 5.385h3.37l.557 3.501a.767.767 0 0 0 .196.934.767.767 0 0 0 .954.026l7.487-4.461H30a5.39 5.39 0 0 0 5.385-5.385V5.385A5.39 5.39 0 0 0 30 0ZM10 15.385a2.31 2.31 0 0 1-2.308-2.308A2.31 2.31 0 0 1 10 10.769a2.31 2.31 0 0 1 2.308 2.308A2.31 2.31 0 0 1 10 15.385Zm7.692 0a2.31 2.31 0 0 1-2.307-2.308 2.31 2.31 0 0 1 2.307-2.308A2.31 2.31 0 0 1 20 13.077a2.31 2.31 0 0 1-2.308 2.308Zm7.693 0a2.31 2.31 0 0 1-2.308-2.308 2.31 2.31 0 0 1 2.308-2.308 2.31 2.31 0 0 1 2.307 2.308 2.31 2.31 0 0 1-2.307 2.308Z" />
+                                            </svg>
+                                        </span>
+                                        <div class="_real_header_content_support_txt">
+                                            <p class="_real_header_content_support_p">
+                                                24/7 customer
+                                                support
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                            <div class="_real_header_img_wrap">
+                                <div class="_real_header_img_shape1">
+                                    <img src="assets/images/find-shape2.svg" alt="shape">
+                                </div>
+                                <div class="_real_header_img_trust">
+                                    <img src="assets/images/trust.png" alt="trust" class="trust_logo">
+                                    <p class="_real_header_img_trust_p">4.9</p>
+                                    <span class="_real_header_img_trust_ic">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"
+                                            viewBox="0 0 22 21">
+                                            <path fill="#FFCE00"
+                                                d="M21.964 7.947a.735.735 0 0 0-.592-.5L14.66 6.47 11.658.376c-.247-.501-1.069-.501-1.316 0L7.341 6.47l-6.713.977A.735.735 0 0 0 .222 8.7l4.857 4.743-1.146 6.698a.734.734 0 0 0 1.064.774L11 17.754l6.004 3.163a.73.73 0 0 0 .772-.056.736.736 0 0 0 .292-.719l-1.146-6.698L21.779 8.7a.736.736 0 0 0 .185-.753Z" />
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="_real_header_img_mortgage">
+                                    <img src="assets/images/house.svg" alt="house"
+                                        class="_real_header_img_mortgage_img">
+                                    <div class="_real_header_img_mortgage_txt">
+                                        <h5 class="_real_header_img_mortgage_title">
+                                            $245.36
+                                        </h5>
+                                        <p class="_real_header_img_mortgage_p">
+                                            Mortgage Per Month
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="_real_header_img_trophy">
+                                    <img src="assets/images/trophy.svg" alt="trophy"
+                                        class="_real_header_img_trophy_img">
+                                    <div class="_real_header_img_trophy_txt text-center">
+                                        <h5 class="_real_header_img_trophy_title">Excellent</h5>
+                                        <p class="_real_header_img_trophy_p">90% Satisfied Clients</p>
+                                    </div>
+                                </div>
+                                <div class="_real_header_content_lock">
+                                    <img src="assets/images/lock.svg" alt="lock">
+                                </div>
+                                <div class="_real_header_content_shape3"></div>
+                                <img src="assets/images/header-img.png" alt="header image"
+                                    class="_real_header_img img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="_real_avoid_wrap">
+                    <div class="_real_avoid_wrap_shape">
+                        <img src="assets/images/header-svg-shape.svg" alt="shape">
+                    </div>
+                    <div class="_real_avoid_wrap_bg"></div>
+                    <div class="row align-items-center">
+                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 align-self-end">
+                            <div class="_real_avoid_content _real_avoid_content_first">
+                                <div class="_real_avoid_content_bg"></div>
+                                <img src="assets/images/avoid-img.png" alt="avoid" class="img-fluid _avoid_img">
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                            <div class="_real_avoid_content">
+                                <div class="_real_avoid_content_inner">
+                                    <h4 class="_real_avoid_content_title">
+                                        Avoid being lowballed by investment firms.
+                                    </h4>
+                                    <button class="_real_footer_top_cta_btn _real_avoid_btn">
+                                        <span class="_real_footer_top_cta_btn_txt _real_explore_content_btn_txt">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"
+                                                viewBox="0 0 30 30">
+                                                <path fill="#000" stroke="#000" stroke-width=".5"
+                                                    d="M15 .59.59 15 2 16.41l1-1V29h24V15.41l1 1L29.41 15 15 .59ZM17 27h-4v-8h4v8Zm8 0h-6V17h-8v10H5V13.41l10-10 10 10V27Z" />
+                                            </svg>
+                                            Get My Cash offer
+                                        </span>
+                                        <span class="_real_footer_top_cta_btn_ic _real_explore_content_btn_ic">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"
+                                                viewBox="0 0 25 23">
+                                                <path fill="#fff" fill-rule="evenodd"
+                                                    d="m15 0-2.508 2.838 5.441 6.197H0v4.006h17.933l-5.441 6.197L15 22.076l9.67-11.038L15 0Z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                            <div class="_real_avoid_content">
+                                <div class="_real_avoid_content_people_wrap">
+                                    <div class="_real_avoid_content_img_wrap">
+                                        <img src="assets/images/people.png" alt="people" class="_people_img img-fluid">
+                                    </div>
+                                    <h5 class="_real_avoid_content_bottom_txt">People successfully Getting Home</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header -->
+    <!-- Properties -->
+    <section class="_real_properties_wrapper">
+        <div class="_real_properties_wrap">
+            <div class="container">
+                <div class="_real_properties_header">
+                    <div class="row align-items-center">
+                        <div class="col-xl-7 col-lg-6 col-md-12 col-sm-12">
+                            <div class="_real_properties_header_txt">
+                                <h3 class="_real_properties_header_sub_title">
+                                    properties
+                                </h3>
+                                <h2 class="_real_properties_header_title">
+                                    Explore our properties
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-lg-6 col-md-12 col-sm-12">
+                            <p class="_real_properties_header_p">
+                                Get your first very own Dream house with <span>Hoomie</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="_real_properties_slider_wrap d-flex justify-content-end">
+                <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="col-xl-4 col-lg-4 col-md-6 col-sm-12 splide__slide">
+                                <div class="_real_properties_slider_content">
+                                    <img src="assets/images/property1.png"
+                                        class="img-fluid _real_properties_slider_content_img" alt="img">
+                                </div>
+                            </li>
+                            <li class="col-xl-4 col-lg-4 col-md-6 col-sm-12 splide__slide">
+                                <div class="_real_properties_slider_content">
+                                    <img src="assets/images/property2.png"
+                                        class="img-fluid _real_properties_slider_content_img" alt="img">
+                                </div>
+
+                            </li>
+                            <li class="col-xl-4 col-lg-4 col-md-6 col-sm-12 splide__slide">
+                                <div class="_real_properties_slider_content">
+                                    <img src="assets/images/property3.png"
+                                        class="img-fluid _real_properties_slider_content_img" alt="img">
+                                </div>
+
+                            </li>
+                            <li class="col-xl-4 col-lg-4 col-md-6 col-sm-12 splide__slide">
+                                <div class="_real_properties_slider_content">
+                                    <img src="assets/images/property4.png"
+                                        class="img-fluid _real_properties_slider_content_img _real_properties_slider_content_img4"
+                                        alt="img">
+                                </div>
+
+                            </li>
+                            <li class="col-xl-4 col-lg-4 col-md-6 col-sm-12 splide__slide">
+                                <div class="_real_properties_slider_content">
+                                    <img src="assets/images/property2.png"
+                                        class="img-fluid _real_properties_slider_content_img" alt="img">
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="splide__arrows splide__arrows--ltr">
+                        <button class="_real_properties_slider_prev_btn splide__arrow splide__arrow--prev" type="button"
+                            aria-label="Previous slide" aria-controls="splide01-track">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" fill="none"
+                                viewBox="0 0 20 17">
+                                <path fill="#000" fill-rule="evenodd"
+                                    d="m11.992 16.676 7.07-6.965a1.623 1.623 0 0 0 0-2.32L11.992.425 9.634 2.748 13.86 6.91H.45v3.283h13.41l-4.225 4.162 2.357 2.322Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+
+                        </button>
+                        <button class="_real_properties_slider_nxt_btn splide__arrow splide__arrow--next" type="button"
+                            aria-label="Next slide" aria-controls="splide01-track">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" fill="none"
+                                viewBox="0 0 20 17">
+                                <path fill="#000" fill-rule="evenodd"
+                                    d="m11.992 16.676 7.07-6.965a1.623 1.623 0 0 0 0-2.32L11.992.425 9.634 2.748 13.86 6.91H.45v3.283h13.41l-4.225 4.162 2.357 2.322Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Properties -->
+    <!-- Find -->
+    <section class="_real_find_wrapper">
+        <div class="_real_find_shape_bg"></div>
+        <div class="_real_find_bg">
+            <img src="assets/images/find-bg.svg" alt="house find image" class="_real_find_bg_img">
+        </div>
+        <div class="_real_find_shape">
+            <img src="assets/images/find-shape1.svg" alt="Shape">
+        </div>
+        <div class="_real_find_shape2">
+            <img src="assets/images/find-shape2.svg" alt="Shape">
+        </div>
+        <div class="_real_find_wrap">
+            <div class="container">
+                <div class="_real_find_content_wrap">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                            <div class="_real_find_content">
+                                <div class="_real_find_content_img">
+                                    <img src="assets/images/home.png" alt="home pic" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="_real_find_content">
+                                <div class="_real_find_content_img _real_find_content_img2">
+                                    <img src="assets/images/home2.png" alt="home pic" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                            <div class="_real_find_content">
+                                <div class="_real_find_content_txt">
+                                    <h3 class="_real_find_content_title">
+                                        Find the home that suits you
+                                    </h3>
+                                </div>
+                                <div class="_real_find_content_img">
+                                    <div class="_real_find_content_img_hover">
+                                        <h4 class="_real_find_content_img_hover_title">
+                                            Bunglow
+                                        </h4>
+                                        <ul class="_real_find_content_img_ul">
+                                            <li class="_real_find_content_img_li">
+                                                <span class="_real_find_content_img_li_ic">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="19"
+                                                        fill="none" viewBox="0 0 25 19">
+                                                        <path fill="#FE5100" fill-rule="evenodd"
+                                                            d="M22.917 9.17c.697.216 1.393.445 2.083.706V19h-2.083v-2.85H2.083V19H0V9.877a34.827 34.827 0 0 1 2.083-.705V0h2.084v1.9h16.666V0h2.084v9.17ZM13.54 7.62c2.428.07 4.872.394 7.292.979v-4.8H13.54V7.62ZM4.166 3.8h7.292v3.824a35.6 35.6 0 0 0-7.292.973V3.8Zm-2.082 7.38v3.07h20.833v-3.07a33.104 33.104 0 0 0-20.833 0Z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                </span>
+                                                <p class="_real_find_content_img_li_txt">
+                                                    5
+                                                </p>
+                                            </li>
+                                            <li class="_real_find_content_img_li">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="2" height="18"
+                                                    fill="none" viewBox="0 0 2 18">
+                                                    <path fill="#000" d="M0 0h2v18H0z" opacity=".36" />
+                                                </svg>
+                                            </li>
+                                            <li class="_real_find_content_img_li">
+                                                <span class="_real_find_content_img_li_ic">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="20"
+                                                        fill="none" viewBox="0 0 25 20">
+                                                        <path fill="#FE5100" fill-rule="evenodd"
+                                                            d="M.113 8.234h24.773v2.471h-1.264l-1.77 5.647c-.379 1.294-1.643 2.235-3.033 2.47V20h-2.528v-1.176H8.708V20H6.18v-1.176c-1.39-.236-2.654-1.294-3.033-2.589l-1.77-5.647H.113V8.234Zm18.074 8.235c.632 0 1.138-.353 1.264-.823l1.39-5.06H4.031l1.517 5.06c.253.47.758.823 1.264.823h11.375Z"
+                                                            clip-rule="evenodd" />
+                                                        <path fill="#FE5100"
+                                                            d="M6.59 0h2.273v5.882H6.59zm4.547 0h2.273v5.882h-2.273zm4.545 0h2.273v5.882h-2.273z" />
+                                                    </svg>
+                                                </span>
+                                                <p class="_real_find_content_img_li_txt">
+                                                    3
+                                                </p>
+                                            </li>
+                                            <li class="_real_find_content_img_li">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="2" height="18"
+                                                    fill="none" viewBox="0 0 2 18">
+                                                    <path fill="#000" d="M0 0h2v18H0z" opacity=".36" />
+                                                </svg>
+                                            </li>
+                                            <li class="_real_find_content_img_li">
+                                                <span class="_real_find_content_img_li_ic">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23"
+                                                        fill="none" viewBox="0 0 20 23">
+                                                        <path fill="#FE5100"
+                                                            d="M1.111 22.223H18.89A1.111 1.111 0 0 0 20 21.11V10a1.108 1.108 0 0 0-.326-.786L10.786.325a1.11 1.11 0 0 0-1.572 0L.326 9.216A1.108 1.108 0 0 0 0 10v11.111a1.111 1.111 0 0 0 1.111 1.111ZM2.222 10.46 10 2.682l7.778 7.778V20h-4.445v-6.666H6.667V20H2.222v-9.54Z" />
+                                                    </svg>
+                                                </span>
+                                                <p class="_real_find_content_img_li_txt">
+                                                    4500
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <img src="assets/images/home3.png" alt="home pic" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                            <div class="_real_find_content">
+                                <div class="_real_find_content_nav">
+                                    <ul class="_real_find_content_ul">
+                                        <li class="_real_find_content_li">
+                                            <button class="_real_find_content_btn _real_find_content_btn_active">
+                                                <span class="_real_find_content_btn_ic">
+                                                </span>
+                                                Buy
+                                            </button>
+                                        </li>
+                                        <li class="_real_find_content_li">
+                                            <button class="_real_find_content_btn">
+                                                <span class="_real_find_content_btn_ic">
+                                                </span>
+                                                Sell
+                                            </button>
+                                        </li>
+                                        <li class="_real_find_content_li">
+                                            <button class="_real_find_content_btn">
+                                                <span class="_real_find_content_btn_ic">
+                                                </span>
+                                                Rent
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="_real_find_content_img">
+                                    <img src="assets/images/home4.png" alt="home pic" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Find -->
+    <!-- Explore -->
+    <section class="_real_explore_wrapper">
+        <div class="_real_explore_shape">
+            <img src="assets/images/art.svg" alt="art" class="_real_explore_wrapper" _real_explore_shape>
+        </div>
+        <div class="_real_explore_wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mx-auto">
+                        <div class="_real_explore_content_wrap">
+                            <div class="row align-items-center">
+                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                                    <div class="_real_explore_content_img_wrap">
+                                        <div class="_real_explore_arrow_shape">
+                                            <img src="assets/images/arrow-curve.svg" alt="arrow">
+                                        </div>
+                                        <div class="_real_explore_content_img_inner">
+                                            <div class="_real_explore_content_img_bg"></div>
+                                            <img src="assets/images/handphone.png"
+                                                class="_real_explore_content_img img-fluid" alt="phone">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                                    <div class="_real_explore_content">
+                                        <p class="_real_explore_txt_shape">Hoomie</p>
+                                        <div class="_real_explore_content_txt">
+                                            <h4 class="_real_explore_content_sub_title">
+                                                Explore
+                                            </h4>
+                                            <h2 class="_real_explore_content_title">
+                                                Sign up for free in 5 minutes or less
+                                            </h2>
+                                            <p class="_real_explore_content_p">
+                                                Our goal is to empower our clients with options so that they can pick
+                                                the service which fits their needs. Be the first one to explore one of
+                                                the best travel application
+                                            </p>
+                                        </div>
+                                        <div class="_real_explore_content_btn_wrap">
+                                            <button class="_real_footer_top_cta_btn _real_explore_content_btn">
+                                                <span
+                                                    class="_real_footer_top_cta_btn_txt _real_explore_content_btn_txt">
+                                                    Find My Home
+                                                </span>
+                                                <span class="_real_footer_top_cta_btn_ic _real_explore_content_btn_ic">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="16"
+                                                        fill="none" view-box="0 0 11 16">
+                                                        <path fill="#000" stroke="#000" stroke-width=".5"
+                                                            d="m3.058 15.019.177.177.177-.177 7.034-7.034.177-.177-.177-.177L3.412.597 3.235.42l-.177.177L1.315 2.34l-.176.176.176.177L6.43 7.808l-5.115 5.114-.176.177.176.177 1.743 1.743Z" />
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Explore -->
+    <!-- CTA -->
+    <section class="_real_cta_wrapper">
+        <div class="_real_cta_wrap">
+            <div class="container">
+                <div class="_real_cta_content_wrap">
+                    <div class="_real_cta_content_bg"></div>
+                    <div class="_real_cta_content_bg_line">
+                        <img src="assets/images/line.svg" alt="line" class="_real_cta_content_line_img">
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 ms-auto">
+                            <div class="_real_cta_content">
+                                <div class="_real_cta_content_txt">
+                                    <h2 class="_real_cta_content_title">Find a new house for your family</h2>
+                                    <p class="_real_cta_content_p">Get your very own house with us</p>
+                                </div>
+                                <div class="_real_cta_content_btn_wrap">
+                                    <button class="_real_cta_content_btn">Sign Up</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-4 col-md-12 col-sm-12">
+                            <div class="_real_cta_content_img_wrap">
+                                <img src="assets/images/trust.svg" alt="Image">
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 me-auto">
+                            <div class="_real_cta_content _real_cta_content_right">
+                                <div class="_real_cta_content_txt">
+                                    <h2 class="_real_cta_content_title">List your house with us for selling</h2>
+                                    <p class="_real_cta_content_p">List your house for selling</p>
+                                </div>
+                                <div class="_real_cta_content_btn_wrap">
+                                    <button class="_real_cta_content_btn">Get Listed</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CTA -->
+    <!-- Marque -->
+    <div class="_real_marque_wrapper">
+        <div class="_real_marque_shape"></div>
+        <div class="_real_marque_wrap">
+            <div class="_real_marque_content_wrap">
+                <ul x-data class="_real_marque_content_ul">
+                    <template x-for="i in 10">
+                        <li class="_real_marque_content_li">
+                            <img src="assets/images/marque-logo.svg" alt="logo">
+                        </li>
+                    </template>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Marque -->
+    <!-- Testimonial -->
+    <section class="_real_testimonial_wrapper">
+        <div class="_real_testimonial_wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                        <div class="_real_testimonial_content">
+                            <div class="_real_testimonial_content_txt">
+                                <h3 class="_real_testimonial_content_sub_title">Testimonial</h3>
+                                <h2 class="_real_testimonial_content_title">
+                                    What our customer say about us
+                                </h2>
+                                <p class="_real_testimonial_content_quote_p">
+                                    ” They were always easy to reach even when they were on their vacation. From home
+                                    repairs to changing lenders, they guided us through the process “
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                        <div class="_real_testimonial_content_img_wrap">
+                            <div class="_real_testimonial_content_img_quote">
+                                <img src="assets/images/quote.svg" alt="quote">
+                            </div>
+                            <div class="_real_testimonial_content_img_shape">
+                                <img src="assets/images/header-svg-shape.svg" alt="shape">
+                            </div>
+                            <div class="_real_testimonial_content_img">
+                                <div class="_real_testimonial_content_img_bg"></div>
+                                <img src="assets/images/testimonial-img.png" alt="testimoniali image"
+                                    class="img-fluid _real_testimonial_img">
+                            </div>
+                            <div class="_real_testimonial_content_img_inner">
+                                <div class="_real_testimonial_content_img_inner_txt">
+                                    <h4 class="_real_testimonial_content_img_inner_title">Thomas Phill</h4>
+                                    <p class="_real_testimonial_content_img_inner_p">Agent</p>
+                                </div>
+                                <button class="_real_testimonial_content_img_inner_btn">
+                                    <span class="_real_testimonial_content_img_innerbtn_ic">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="none"
+                                            viewBox="0 0 60 61">
+                                            <path fill="#061800"
+                                                d="M10 8.498c-1.095 0-2.5.82-2.5 2.5 0 11.348 4.602 22.183 12.417 30.083 7.9 7.815 18.736 12.417 30.083 12.417 1.68 0 2.5-1.405 2.5-2.5v-8.774a2.499 2.499 0 0 0-2.441-2.505c-1.575-.038-3.557-.132-4.81-.352-1.355-.24-2.988-.702-4.136-1.06a2.535 2.535 0 0 0-2.544.63l-5.542 5.513c-3.83-2.017-6.9-4.37-9.497-6.982-2.612-2.598-4.965-5.667-6.982-9.497l5.513-5.542c.665-.668.91-1.65.63-2.55-.356-1.144-.823-2.775-1.06-4.13-.223-1.253-.312-3.235-.352-4.81a2.499 2.499 0 0 0-2.505-2.441H10Zm30 0v7.5h-7.5v5H40v7.5h5v-7.5h7.5v-5H45v-7.5h-5Z" />
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonial -->
+    <!-- Footer -->
+    <footer class="_real_footer_wrapper">
+        <div class="_real_footer_wrap">
+            <div class="container">
+                <!-- footer-top -->
+                <div class="_real_footer_top_wrap">
+                    <div class="row align-items-center">
+                        <div class="col-xl-4 col-xl-4 col-md-12 col-sm-12">
+                            <div class="_real_footer_top_logo_content">
+                                <img src="assets/images/logo-ft.svg" alt="Logo footer"
+                                    class="_real_footer_top_logo_img">
+                            </div>
+                        </div>
+                        <div class="col-xl-8 col-xl-8 col-md-12 col-sm-12">
+                            <div class="_real_footer_top_cta_wrap">
+                                <p class="_real_footer_top_cta_txt">
+                                    Ready to get started?
+                                </p>
+                                <div class="_real_footer_top_cta_btn_wrap">
+                                    <button class="_real_footer_top_cta_btn">
+                                        <span class="_real_footer_top_cta_btn_txt">
+                                            Find My Home
+                                        </span>
+                                        <span class="_real_footer_top_cta_btn_ic">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="16" fill="none"
+                                                view-box="0 0 11 16">
+                                                <path fill="#000" stroke="#000" stroke-width=".5"
+                                                    d="m3.058 15.019.177.177.177-.177 7.034-7.034.177-.177-.177-.177L3.412.597 3.235.42l-.177.177L1.315 2.34l-.176.176.176.177L6.43 7.808l-5.115 5.114-.176.177.176.177 1.743 1.743Z" />
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- footer-top -->
+                <hr class="_ft_divider">
+                <!-- footer-bottom -->
+                <div class="_real_footer_bottom_wrap">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-2 col-md-12 col-sm-12">
+                            <div class="_real_footer_bottom_inner">
+                                <p class="_real_footer_bottom_inner_p">Subscribe to our
+                                    newsletter</p>
+                                <div class="_real_footer_bottom_inner_input_wrap">
+                                    <input type="email" placeholder="Email address"
+                                        class="_real_footer_bottom_inner_input">
+                                    <button class="_real_footer_bottom_inner_input_btn">
+                                        <span class="_real_footer_bottom_inner_input_btn_ic">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="17" fill="none"
+                                                view-box="0 0 11 17">
+                                                <path fill="#fff" stroke="#fff" stroke-width=".5"
+                                                    d="m3.023 15.642.177.177.177-.177 7.034-7.034.177-.177-.177-.177L3.377 1.22 3.2 1.043l-.177.177L1.28 2.963l-.177.176.177.177 5.115 5.115-5.115 5.115-.177.176.177.177 1.743 1.743Z" />
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12">
+                            <div class="_real_footer_bottom_inner">
+                                <h3 class="_real_footer_bottom_inner_title">Services</h3>
+                                <ul class="_real_footer_bottom_inner_ul">
+                                    <li class="_real_footer_bottom_inner_li">
+                                        <a class="_real_footer_bottom_inner_a" href="#0">Buy or Sell</a>
+                                    </li>
+                                    <li class="_real_footer_bottom_inner_li">
+                                        <a class="_real_footer_bottom_inner_a" href="#0">Campaigns</a>
+                                    </li>
+                                    <li class="_real_footer_bottom_inner_li">
+                                        <a class="_real_footer_bottom_inner_a" href="#0">Branding</a>
+                                    </li>
+                                    <li class="_real_footer_bottom_inner_li">
+                                        <a class="_real_footer_bottom_inner_a" href="#0">Offline</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12">
+                            <div class="_real_footer_bottom_inner">
+                                <h3 class="_real_footer_bottom_inner_title">Hoomie</h3>
+                                <ul class="_real_footer_bottom_inner_ul">
+                                    <li class="_real_footer_bottom_inner_li">
+                                        <a class="_real_footer_bottom_inner_a" href="#0">Enterprise</a>
+                                    </li>
+                                    <li class="_real_footer_bottom_inner_li">
+                                        <a class="_real_footer_bottom_inner_a" href="#0">Pricing</a>
+                                    </li>
+                                    <li class="_real_footer_bottom_inner_li">
+                                        <a class="_real_footer_bottom_inner_a" href="#0">Customer Stories</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12">
+                            <div class="_real_footer_bottom_inner">
+                                <h3 class="_real_footer_bottom_inner_title">Help Center</h3>
+                                <ul class="_real_footer_bottom_inner_ul">
+                                    <li class="_real_footer_bottom_inner_li">
+                                        <a class="_real_footer_bottom_inner_a" href="#0">Community</a>
+                                    </li>
+                                    <li class="_real_footer_bottom_inner_li">
+                                        <a class="_real_footer_bottom_inner_a" href="#0">Security</a>
+                                    </li>
+                                    <li class="_real_footer_bottom_inner_li">
+                                        <a class="_real_footer_bottom_inner_a" href="#0">Call Center</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-2 col-md-12 col-sm-12">
+                            <div class="_real_footer_bottom_inner">
+                                <h3 class="_real_footer_bottom_inner_title">Social</h3>
+                                <ul class="_real_footer_bottom_inner_social_ul">
+                                    <li class="_real_footer_bottom_inner_social_li">
+                                        <a class="_real_footer_bottom_inner_social_a" href="#0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="20" fill="none"
+                                                view-box="0 0 10 20">
+                                                <path fill="#fff"
+                                                    d="M8.112 3.295h1.811V.14A23.394 23.394 0 0 0 7.283 0c-2.611 0-4.4 1.643-4.4 4.663v2.779H0v3.527h2.882v8.876h3.535V10.97h2.765l.44-3.527H6.415v-2.43c0-1.02.275-1.718 1.696-1.718Z" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="_real_footer_bottom_inner_social_li">
+                                        <a class="_real_footer_bottom_inner_social_a" href="#0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" fill="none"
+                                                view-box="0 0 23 18">
+                                                <path fill="#fff"
+                                                    d="M22.962 2.116a9.404 9.404 0 0 1-2.599.712A4.485 4.485 0 0 0 22.347.336a9.014 9.014 0 0 1-2.86 1.091 4.509 4.509 0 0 0-7.802 3.084c0 .358.03.702.105 1.029C8.04 5.357 4.723 3.56 2.494.822a4.54 4.54 0 0 0-.618 2.28c0 1.562.805 2.947 2.004 3.748a4.454 4.454 0 0 1-2.038-.555v.05a4.531 4.531 0 0 0 3.613 4.43 4.5 4.5 0 0 1-1.182.15c-.289 0-.58-.017-.854-.078.584 1.787 2.243 3.1 4.214 3.142a9.063 9.063 0 0 1-5.592 1.924c-.37 0-.724-.017-1.08-.062a12.697 12.697 0 0 0 6.92 2.024c8.3 0 12.837-6.875 12.837-12.834 0-.2-.007-.392-.017-.583a8.997 8.997 0 0 0 2.26-2.342Z" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="_real_footer_bottom_inner_social_li">
+                                        <a class="_real_footer_bottom_inner_social_a" href="#0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" fill="none"
+                                                view-box="0 0 23 22">
+                                                <path fill="#fff" fill-rule="evenodd"
+                                                    d="M7.837 0h8.25a6.876 6.876 0 0 1 6.875 6.875v8.25A6.876 6.876 0 0 1 16.087 22h-8.25a6.876 6.876 0 0 1-6.875-6.875v-8.25A6.876 6.876 0 0 1 7.837 0Zm8.25 19.938a4.818 4.818 0 0 0 4.812-4.813v-8.25a4.818 4.818 0 0 0-4.812-4.813h-8.25a4.818 4.818 0 0 0-4.813 4.813v8.25a4.818 4.818 0 0 0 4.813 4.813h8.25Z"
+                                                    clip-rule="evenodd" />
+                                                <path fill="#fff" fill-rule="evenodd"
+                                                    d="M6.462 11a5.5 5.5 0 1 1 11 0 5.5 5.5 0 0 1-11 0Zm2.062 0a3.442 3.442 0 0 0 3.438 3.438A3.442 3.442 0 0 0 15.399 11a3.441 3.441 0 0 0-3.437-3.438A3.441 3.441 0 0 0 8.524 11Z"
+                                                    clip-rule="evenodd" />
+                                                <circle cx="17.875" cy="5.088" r=".733" fill="#fff" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="_real_footer_bottom_inner_email_wrap">
+                                    <span class="_real_footer_bottom_inner_email_ic">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="23" fill="none"
+                                            view-box="0 0 28 23">
+                                            <path fill="#FF5E3B"
+                                                d="M22.416 3.203H5.337c-1.174 0-2.135.96-2.135 2.135v10.674c0 1.174.961 2.135 2.135 2.135h17.08a2.142 2.142 0 0 0 2.134-2.135V5.338a2.141 2.141 0 0 0-2.135-2.135ZM20.64 5.338l-6.764 6.086-6.763-6.086H20.64Zm1.776 10.674H5.337V6.611l7.747 6.971a1.213 1.213 0 0 0 1.585 0l7.747-6.971v9.401Z" />
+                                        </svg>
+                                    </span>
+                                    <p class="_real_footer_bottom_inner_email_txt">farzanfaruk90@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- footer-bottom -->
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+    <!-- Test -->
+
+    <!-- Test -->
+    <!-- Bootstrap Js -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Splide Js -->
+    <script src="assets/js/splide.min.js"></script>
+    <!-- GSAP Js -->
+    <script src="assets/js/gsap.min.js"></script>
+    <!-- Custom Js -->
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
