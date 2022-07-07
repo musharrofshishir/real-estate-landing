@@ -605,8 +605,14 @@ button {
 }
 
 ._real_find_content_img {
-    padding: 25px 0;
+    padding: 50px 0;
     position: relative;
+}
+
+._real_find_content_img:hover ._real_find_content_img_hover {
+    transform: translate(-50%, 0px);
+    visibility: visible;
+    opacity: 1;
 }
 
 ._real_find_content_img_hover {
@@ -616,7 +622,15 @@ button {
     width: calc(100% - 100px);
     left: 50%;
     bottom: -30px;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, 30px);
+    visibility: hidden;
+    opacity: 0;
+    transition: .2s all ease;
+}
+
+._real_find_content_img2 ._real_find_content_img_hover {
+    width: calc(100% + 40px);
+    left: 20%;
 }
 
 ._real_find_content_img_hover_title {
