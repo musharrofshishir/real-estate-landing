@@ -1110,6 +1110,100 @@ button {
     background: #91D47D;
 }
 
+._real_testimonial_wrapper .splide__slide {
+    /* opacity: 0.6; */
+}
+
+._real_testimonial_wrapper .splide__slide.is-active {
+    opacity: 1;
+}
+
+._real_testimonial_slider_nxt_btn {
+    right: 0;
+    border: 2px solid #C2C2C2;
+    box-shadow: none;
+}
+
+._real_testimonial_main_wrap {
+    margin: 20px 0 60px;
+}
+
+._real_testimonial_thumb_wrap {
+    margin: 20px 0;
+}
+
+._real_testimonial_thumb_img_wrap {
+    padding: 8px;
+    position: relative;
+}
+
+.splide--nav>.splide__track>.splide__list>.splide__slide.is-active {
+    border: 3px solid transparent;
+    /* padding: 12px; */
+    border-radius: 50%;
+}
+
+.progress_circ {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.splide--nav>.splide__track>.splide__list>.splide__slide.is-active .progress_circ {
+    display: inline-flex;
+
+}
+
+.progress_circ svg {
+    width: 120px;
+    height: 120px;
+}
+
+.circ {
+    transform: rotate(-90deg);
+    transition: transform .3s ease;
+}
+
+.circ circle {
+    stroke-dasharray: 540px;
+}
+
+.circ1 {
+    stroke-dashoffset: 540px;
+    animation: progress 8s linear;
+}
+
+.circ {
+    transform: rotate(-90deg);
+}
+
+.circ1 {
+    stroke-dashoffset: 220px;
+    transition: linear 8s stroke-dashoffset;
+}
+
+
+@keyframes progress {
+    from {
+        stroke-dashoffset: 540px;
+    }
+
+    to {
+        stroke-dashoffset: 0px;
+
+    }
+}
+
+#thumbnail-carousel .splide__arrows {
+    display: none;
+}
+
 /* Testimonial */
 /* Footer */
 ._real_footer_wrapper {
