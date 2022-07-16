@@ -214,6 +214,7 @@ button {
     position: absolute;
     top: 80px;
     left: 45px;
+    z-index: 2;
 }
 
 ._real_header_img_shape1 {
@@ -235,6 +236,7 @@ button {
     position: absolute;
     bottom: 220px;
     left: 0;
+    z-index: 2;
 }
 
 ._real_header_img_trust_p {
@@ -268,6 +270,7 @@ button {
     right: -60px;
     top: 120px;
     padding: 20px;
+    z-index: 2;
     box-shadow: 3.02547px 12.1019px 50px rgba(0, 0, 0, 0.05);
 }
 
@@ -303,6 +306,7 @@ button {
     position: absolute;
     bottom: -100px;
     right: 120px;
+    z-index: 2;
     box-shadow: 3.02547px 12.1019px 55px rgba(0, 0, 0, 0.05);
 }
 
@@ -1242,6 +1246,30 @@ button {
     color: #FFFFFF;
     background-color: var(--color-btn);
     padding: 0;
+    position: relative;
+    z-index: 2;
+}
+
+._real_footer_top_cta_btn:hover {
+    /* color: var(--color-btn); */
+}
+
+
+@keyframes reveal {
+    0% {
+        width: 0;
+        right: 0;
+    }
+
+    50% {
+        width: 100%;
+        right: 0;
+    }
+
+    100% {
+        width: 0;
+        left: 0;
+    }
 }
 
 ._real_footer_top_cta_btn_txt {
