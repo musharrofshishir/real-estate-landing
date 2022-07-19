@@ -14,6 +14,11 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Alpine Js -->
     <script defer src="https://unpkg.com/alpinejs@3.10.2/dist/cdn.min.js"></script>
+    <style>
+        [x-cloak] {
+            display: none !important;
+        }
+    </style>
 </head>
 
 <body class="_body">
@@ -332,7 +337,7 @@
         <div class="_real_find_shape2">
             <img src="assets/images/find-shape2.svg" alt="Shape">
         </div>
-        <div class="_real_find_wrap">
+        <div class="_real_find_wrap" x-data="{tab: 'buy'}">
             <div class="container">
                 <div class="_real_find_content_wrap">
                     <div class="row">
@@ -398,7 +403,15 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <img src="assets/images/home.png" alt="home pic" class="img-fluid">
+                                    <template x-if="tab=='buy'">
+                                        <img src="assets/images/home.png" alt="home pic" class="img-fluid">
+                                    </template>
+                                    <template x-if="tab=='sell'">
+                                        <img src="assets/images/home3.png" alt="home pic" class="img-fluid">
+                                    </template>
+                                    <template x-if="tab=='rent'">
+                                        <img src="assets/images/home4.png" alt="home pic" class="img-fluid">
+                                    </template>
                                 </div>
                             </div>
                             <div class="_real_find_content">
@@ -462,7 +475,15 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <img src="assets/images/home2.png" alt="home pic" class="img-fluid">
+                                    <template x-if="tab=='buy'">
+                                        <img src="assets/images/home2.png" alt="home pic" class="img-fluid">
+                                    </template>
+                                    <template x-if="tab=='sell'">
+                                        <img src="assets/images/home4.png" alt="home pic" class="img-fluid">
+                                    </template>
+                                    <template x-if="tab=='rent'">
+                                        <img src="assets/images/home3.png" alt="home pic" class="img-fluid">
+                                    </template>
                                 </div>
                             </div>
                         </div>
@@ -533,7 +554,15 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <img src="assets/images/home3.png" alt="home pic" class="img-fluid">
+                                    <template x-if="tab=='buy'">
+                                        <img src="assets/images/home3.png" alt="home pic" class="img-fluid">
+                                    </template>
+                                    <template x-if="tab=='sell'">
+                                        <img src="assets/images/home2.png" alt="home pic" class="img-fluid">
+                                    </template>
+                                    <template x-if="tab=='rent'">
+                                        <img src="assets/images/home.png" alt="home pic" class="img-fluid">
+                                    </template>
                                 </div>
                             </div>
                         </div>
@@ -542,21 +571,27 @@
                                 <div class="_real_find_content_nav">
                                     <ul class="_real_find_content_ul">
                                         <li class="_real_find_content_li">
-                                            <button class="_real_find_content_btn _real_find_content_btn_active">
+                                            <button @click="tab = 'buy'"
+                                                :class="tab == 'buy' ? '_real_find_content_btn_active' : ''"
+                                                class="_real_find_content_btn">
                                                 <span class="_real_find_content_btn_ic">
                                                 </span>
                                                 Buy
                                             </button>
                                         </li>
                                         <li class="_real_find_content_li">
-                                            <button class="_real_find_content_btn">
+                                            <button @click="tab = 'sell'"
+                                                :class="tab == 'sell' ? '_real_find_content_btn_active' : ''"
+                                                class="_real_find_content_btn">
                                                 <span class="_real_find_content_btn_ic">
                                                 </span>
                                                 Sell
                                             </button>
                                         </li>
                                         <li class="_real_find_content_li">
-                                            <button class="_real_find_content_btn">
+                                            <button @click="tab = 'rent'"
+                                                :class="tab == 'rent' ? '_real_find_content_btn_active' : ''"
+                                                class="_real_find_content_btn">
                                                 <span class="_real_find_content_btn_ic">
                                                 </span>
                                                 Rent
@@ -624,7 +659,15 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <img src="assets/images/home4.png" alt="home pic" class="img-fluid">
+                                    <template x-if="tab=='buy'">
+                                        <img src="assets/images/home4.png" alt="home pic" class="img-fluid">
+                                    </template>
+                                    <template x-if="tab=='sell'">
+                                        <img src="assets/images/home.png" alt="home pic" class="img-fluid">
+                                    </template>
+                                    <template x-if="tab=='rent'">
+                                        <img src="assets/images/home2.png" alt="home pic" class="img-fluid">
+                                    </template>
                                 </div>
                             </div>
                         </div>

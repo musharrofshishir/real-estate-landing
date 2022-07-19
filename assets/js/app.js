@@ -151,6 +151,32 @@ gsap.from('._real_avoid_wrap_shape',{
   ease: "power3.out"
 },1.8)
 
+gsap.from('._real_avoid_wrap_bg',{
+  scrollTrigger:{
+    trigger:'._real_avoid_wrap_bg',
+  },
+  width: 0,
+  duration:1.4,
+  ease: "power3.out"
+})
+gsap.from('._real_avoid_content_bg',{
+  scrollTrigger:{
+    trigger:'._real_avoid_wrap_bg',
+  },
+  height: 0,
+  duration:1.4,
+  ease: "power3.out"
+})
+gsap.from('._avoid_img',{
+  scrollTrigger:{
+    trigger:'._real_avoid_wrap_bg',
+  },
+  y: 50,
+  opacity: 0,
+  duration:1.4,
+  ease: "power3.out"
+})
+
 // .from('._real_header_img_trophy',{
 //   y:50,
 //   opacity: 0,
