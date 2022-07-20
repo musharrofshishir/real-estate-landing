@@ -176,6 +176,69 @@ gsap.from('._avoid_img',{
   duration:1.4,
   ease: "power3.out"
 })
+gsap.from('._real_properties_header_txt',{
+  scrollTrigger:{
+    trigger:'._real_properties_header',
+  },
+  y: 50,
+  opacity: 0,
+  duration:1.4,
+  ease: "power3.out"
+})
+gsap.from('._real_properties_header_p',{
+  scrollTrigger:{
+    trigger:'._real_properties_header',
+  },
+  y: 50,
+  opacity: 0,
+  duration:1.4,
+  ease: "power3.out"
+})
+gsap.from('._real_properties_slider_wrap',{
+  scrollTrigger:{
+    trigger:'._real_properties_slider_wrap',
+  },
+  x: 200,
+  opacity: 0,
+  duration:1.4,
+  ease: "power4.out"
+})
+gsap.from('._real_explore_arrow_shape',{
+  scrollTrigger:{
+    trigger:'._real_explore_content_title',
+  },
+  rotate: 50,
+  opacity: 0,
+  duration:1.4,
+  ease: "power3.out"
+})
+gsap.from('._real_explore_shape_img',{
+  scrollTrigger:{
+    trigger:'._real_explore_content_title',
+  },
+  rotate: 40,
+  x:120,
+  opacity: 0,
+  duration:1.4,
+  ease: "power3.out"
+})
+gsap.fromTo('._real_marque_content_ul',{
+  // scrollTrigger:{
+  //   trigger:'._real_marque_content_wrap',
+  //   scrub: .2,
+  // },
+  x: -225,
+  duration:3,
+  ease: "linear",
+},{
+  x: 34,
+  duration:3,
+  ease: "linear",
+  repeat: -1
+});
+
+
+
 
 // .from('._real_header_img_trophy',{
 //   y:50,
