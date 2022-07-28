@@ -168,6 +168,13 @@ gsap.from('._real_header_img_trophy',{
   },
   y: 100
 })
+gsap.from('._real_find_bg',{
+  scrollTrigger:{
+    trigger:'._real_find_wrap',
+    scrub:1
+  },
+  y: 100
+})
 gsap.from('._real_avoid_wrap_shape',{
   scrollTrigger:{
     trigger: '._real_avoid_wrap_bg',
