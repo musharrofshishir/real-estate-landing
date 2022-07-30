@@ -297,12 +297,12 @@ gsap.from('._real_explore_content_img',{
   opacity: 0,
   duration:1.2,
   ease: "expo.out",
-  delay: .3
+  delay: .2
 })
 gsap.from('._real_explore_txt_shape',{
   scrollTrigger:{
     trigger:'._real_explore_content',
-    start: '40% 40%'
+    start: '10% 75%'
   },
   opacity: 0,
   x: 50,
@@ -328,6 +328,16 @@ gsap.from('._real_explore_content_img_bg',{
   x:-30,
   duration:1.5,
   ease: "expo.out"
+})
+gsap.from('._real_cta_content_bg_line',{
+  scrollTrigger:{
+    trigger:'._real_cta_content_wrap',
+    // start: '40% 40%',
+    scrub: 1.2
+  },
+  y:80,
+  duration:.3,
+  ease: "expo.out",
 })
 // gsap.to('._real_explore_shape_img',{
 //   scrollTrigger:{
@@ -355,16 +365,50 @@ gsap.fromTo('._real_marque_content_ul',{
 gsap.from('._real_marque_shape',{
   scrollTrigger:{
     trigger:'._real_marque_wrapper',
+    start: '10% 80%'
   },
   y:80,
   x:-100,
   opacity: 0,
   duration:2,
+  delay:.3,
+  ease: "power3.out"
+})
+gsap.from('._real_marque_content_ul',{
+  scrollTrigger:{
+    trigger:'._real_marque_wrapper',
+    start: '10% 80%'
+  },
+  opacity:0,
+  width: 0,
+  duration:2.3,
+  delay:.4,
+  ease: "expo.out"
+})
+gsap.from('._real_marque_content_wrap',{
+  scrollTrigger:{
+    trigger:'._real_marque_wrapper',
+    start: '10% 80%'
+  },
+  width: 0,
+  duration:2,
+  delay:.1,
+  ease: "power3.out"
+})
+gsap.from('._real_testimonial_content_img_shape',{
+  scrollTrigger:{
+    trigger:'._real_testimonial_content_img_wrap',
+    start: '10% 80%',
+    scrub: 1.2
+  },
+  y: 50,
+  duration:1.2,
   ease: "power3.out"
 })
 gsap.from('._real_testimonial_img',{
   scrollTrigger:{
     trigger:'._real_testimonial_content_img',
+    start: '10% 80%'
   },
   y: 50,
   opacity: 0,
