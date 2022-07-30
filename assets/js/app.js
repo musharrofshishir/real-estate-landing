@@ -109,13 +109,13 @@ tl.from('._body',{
   ease: "back.out(1.8)"
 })
 .from('._real_header_img_shape1',{
-  y:-20,
+  x:50,
   opacity: 0,
   duration:.5,
   ease: "power3.in"
 },1.2)
 .from('._real_header_shape',{
-  y:-20,
+  x:40,
   opacity: 0,
   duration:.8,
   ease: "power3.in"
@@ -140,6 +140,27 @@ tl.from('._body',{
   duration:1,
   ease: "power3.out"
 },1.2)
+gsap.from('._real_avoid_wrap_shape',{
+  scrollTrigger:{
+    trigger:'._real_avoid_wrap',
+    scrub:1.2
+  },
+  y: 120
+})
+gsap.from('._real_header_shape',{
+  scrollTrigger:{
+    trigger:'._real_avoid_wrap',
+    scrub:1.2
+  },
+  y: 120
+})
+gsap.from('._real_header_img_shape1',{
+  scrollTrigger:{
+    trigger:'._real_header_img_wrap',
+    scrub:1.2
+  },
+  y: 150
+})
 gsap.from('._real_header_content_lock',{
   scrollTrigger:{
     trigger:'._real_header_img_wrap',
@@ -150,23 +171,38 @@ gsap.from('._real_header_content_lock',{
 gsap.from('._real_header_img_trust',{
   scrollTrigger:{
     trigger:'._real_header_img_wrap',
-    scrub:.2
+    scrub:.6
   },
-  y: 100
+  y: 80
 })
 gsap.from('._real_header_img_mortgage',{
   scrollTrigger:{
     trigger:'._real_header_img_wrap',
-    scrub:.2
+    scrub:.9
   },
-  y: 100
+  y: 150
 })
 gsap.from('._real_header_img_trophy',{
   scrollTrigger:{
     trigger:'._real_header_img_wrap',
-    scrub:.2
+    scrub:1.3
   },
-  y: 100
+  y: 120
+})
+gsap.from('._real_find_shape',{
+  scrollTrigger:{
+    trigger:'._real_find_wrap',
+    scrub:1
+  },
+  y: 40,
+  rotate: 40
+})
+gsap.from('._real_find_shape2',{
+  scrollTrigger:{
+    trigger:'._real_find_wrap',
+    scrub:1
+  },
+  y: 30,
 })
 gsap.from('._real_find_bg',{
   scrollTrigger:{
@@ -175,15 +211,6 @@ gsap.from('._real_find_bg',{
   },
   y: 100
 })
-gsap.from('._real_avoid_wrap_shape',{
-  scrollTrigger:{
-    trigger: '._real_avoid_wrap_bg',
-  },
-  opacity: 0,
-  y: -200,
-  duration:1.4,
-  ease: "power3.out"
-},1.8)
 
 gsap.from('._real_avoid_wrap_bg',{
   scrollTrigger:{
@@ -230,16 +257,18 @@ gsap.from('._real_properties_header_p',{
 })
 gsap.from('._real_properties_slider_wrap',{
   scrollTrigger:{
-    trigger:'._real_properties_slider_wrap',
+    trigger:'._real_properties_wrap',
   },
   x: 200,
   opacity: 0,
   duration:1.4,
-  ease: "power4.out"
+  ease: "power4.out",
+  delay:.4
 })
 gsap.from('._real_explore_arrow_shape',{
   scrollTrigger:{
     trigger:'._real_explore_content_title',
+    start: '50% 50%'
   },
   rotate: 50,
   opacity: 0,
@@ -249,6 +278,7 @@ gsap.from('._real_explore_arrow_shape',{
 gsap.from('._real_explore_shape_img',{
   scrollTrigger:{
     trigger:'._real_explore_content_title',
+    start: '50% 50%'
   },
   rotate: 40,
   x:120,
@@ -256,6 +286,58 @@ gsap.from('._real_explore_shape_img',{
   duration:1.4,
   ease: "power3.out"
 })
+gsap.from('._real_explore_content_img',{
+  scrollTrigger:{
+    trigger:'._real_explore_content_title',
+    start: '50% 50%'
+  },
+  rotate: -20,
+  x:-70,
+  y:-70,
+  opacity: 0,
+  duration:1.2,
+  ease: "expo.out",
+  delay: .3
+})
+gsap.from('._real_explore_txt_shape',{
+  scrollTrigger:{
+    trigger:'._real_explore_content',
+    start: '40% 40%'
+  },
+  opacity: 0,
+  x: 50,
+  duration:1.2,
+  ease: "expo.out",
+  delay: .3
+})
+gsap.from('._real_explore_txt_shape',{
+  scrollTrigger:{
+    trigger:'._real_explore_content',
+    start: '40% 40%',
+    scrub: 1.2
+  },
+  y:40,
+  duration:1,
+  ease: "expo.out",
+})
+gsap.from('._real_explore_content_img_bg',{
+  scrollTrigger:{
+    trigger:'._real_explore_content_title',
+  },
+  scale:0,
+  x:-30,
+  duration:1.5,
+  ease: "expo.out"
+})
+// gsap.to('._real_explore_shape_img',{
+//   scrollTrigger:{
+//     trigger:'._real_explore_content_title',
+//     scrub: 1.2
+//   },
+//   y:50,
+//   duration:1,
+//   ease: "expo.out"
+// })
 gsap.fromTo('._real_marque_content_ul',{
   // scrollTrigger:{
   //   trigger:'._real_marque_content_wrap',
@@ -307,6 +389,7 @@ gsap.from('._real_testimonial_content_img_bg',{
   duration:1.8,
   ease: "power3.out"
 })
+
 
 
 
