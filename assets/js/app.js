@@ -73,31 +73,31 @@ tl.from('._body',{
 .from('._real_header_img',{
   y:50,
   opacity: 0,
-  duration:.3,
+  duration:.2,
   ease: "back.out(1.8)"
 },1)
 .from('._real_header_content_lock',{
   scale:0,
   opacity: 0,
-  duration:.2,
+  duration:.1,
   ease: "back.out(1.8)"
 })
 .from('._real_header_img_trust',{
   scale:0,
   opacity: 0,
-  duration:.2,
+  duration:.1,
   ease: "back.out(1.8)"
 })
 .from('._real_header_img_mortgage',{
   scale:0,
   opacity: 0,
-  duration:.2,
+  duration:.1,
   ease: "back.out(1.8)"
 })
 .from('._real_header_img_trophy',{
   scale:0,
   opacity: 0,
-  duration:.2,
+  duration:.1,
   ease: "back.out(1.8)"
 })
 .from('._real_header_content_support_arrow',{

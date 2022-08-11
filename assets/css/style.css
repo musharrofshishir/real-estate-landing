@@ -718,6 +718,23 @@ button {
     position: relative;
 }
 
+.img_1 {
+    max-height: 295px;
+}
+
+.img_2 {
+    max-height: 182px;
+}
+
+.img_3 {
+    max-height: 295px;
+
+}
+
+.img_4 {
+    max-height: 295px;
+}
+
 ._real_find_content_img:hover ._real_find_content_img_hover {
     transform: translate(-50%, 0px);
     visibility: visible;
